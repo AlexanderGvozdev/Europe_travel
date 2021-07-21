@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: solid #d7d9df 1px;
+
+  @media (max-width: $tablet-width-max) {
+    border-right: none;
+  }
+}
+
+.contacts a {
+  color: #fe7865;
+}

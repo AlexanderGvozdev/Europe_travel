@@ -1,0 +1,37 @@
+.travels {
+  border-right: solid #d7d9df 1px;
+  text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    flex-basis: 49%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    border-bottom: solid #d7d9df 1px;
+    border-right: none;
+  }
+}
+
+.travels__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.travels__list a {
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+}
+
+.travels__list {
+  @media (max-width: $mobile-width-max) {
+    flex-basis: 30%;
+  }
+}
+
+.travels__list:last-child {
+  @media (max-width: $mobile-width-max) {
+    flex-grow: 1;
+  }
+}

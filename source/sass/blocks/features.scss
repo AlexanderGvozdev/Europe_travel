@@ -1,0 +1,30 @@
+.features {
+  width: 298px;
+
+  @media (max-width: $tablet-width-max) {
+    border-top: solid #d7d9df 1px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.features p {
+  color: black;
+  opacity: 50%;
+
+  @media (max-width: $tablet-width-max) {
+    width: 645px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 270px;
+  }
+}

@@ -1,0 +1,14 @@
+.page-header__container {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  height: 32px;
+  display: grid;
+  grid-template-columns: 147px auto;
+  gap: 192px;
+}
+
+.page-header__logo {
+  display: block;
+}

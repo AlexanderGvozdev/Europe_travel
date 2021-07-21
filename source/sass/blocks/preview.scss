@@ -1,0 +1,126 @@
+.preview {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width-max) {
+    background-image: url("../img/background-tablet.png");
+    background-size: 100% 96%;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-image: url("../img/background-mobile.png");
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+  }
+}
+
+.preview__wrapper {
+  color: white;
+  width: 295px;
+  padding-left: 55%;
+  padding-top: 23px;
+  padding-bottom: 415px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+  }
+}
+
+.preview__header {
+  line-height: 80px;
+  font-size: 55px;
+  font-weight: 600;
+
+  @media (max-width: $tablet-width-max) {
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    transform: translateY(38px);
+  }
+}
+
+.preview__desc {
+  line-height: 27px;
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: $mobile-width-max) {
+    color: black;
+  }
+}
+
+.preview__button {
+  background-color: #fe7865;
+  color: white;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 179px;
+  width: 340px;
+  height: 75px;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+
+  @media (max-width: $tablet-width-max) {
+    width: 250px;
+    height: 50px;
+    padding-left: 40px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 107px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    height: 50px;
+    padding-left: 40px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 145px;
+  }
+}
+
+.preview__button::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/arrow-bottom.svg");
+  position: absolute;
+  top: 26px;
+  right: 45px;
+}
+
+.preview__button:hover {
+  cursor: pointer;
+}
+
+.preview__container {
+  @media (max-width: $mobile-width-max) {
+    transform: translateY(120px);
+  }
+}
