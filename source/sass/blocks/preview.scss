@@ -5,7 +5,7 @@
 
   @media (max-width: $tablet-width-max) {
     background-image: url("../img/background-tablet.png");
-    background-size: 100% 96%;
+    background-size: 100% 90%;
     background-repeat: no-repeat;
   }
 
@@ -18,26 +18,28 @@
 
 .preview__wrapper {
   color: white;
-  width: 295px;
-  padding-left: 55%;
-  padding-top: 23px;
-  padding-bottom: 415px;
+  width: 396px;
+  padding-left: 56%;
+  padding-top: 140px;
+  padding-bottom: 298px;
 
   @media (max-width: $tablet-width-max) {
-    width: 690px;
+    width: 465px;
     margin-left: auto;
     margin-right: auto;
     color: white;
     text-align: center;
     padding-left: 0;
-    padding-bottom: 120px;
+    padding-top: 36px;
+    padding-bottom: 106px;
   }
 
   @media (max-width: $mobile-width-max) {
-    width: 260px;
+    width: 285px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 120px;
+    padding-bottom: 116px;
+    padding-top: 25px;
   }
 }
 
@@ -111,8 +113,8 @@
   height: 14px;
   background: url("../img/arrow-bottom.svg");
   position: absolute;
-  top: 26px;
-  right: 45px;
+  top: 20px;
+  right: 43px;
 }
 
 .preview__button:hover {
