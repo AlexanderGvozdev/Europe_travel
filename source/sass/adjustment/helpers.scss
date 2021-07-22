@@ -19,7 +19,11 @@
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 375px;
+  padding: 0 21px;
+
+  @media (min-width: $desktop-width-max) {
+    padding: 0 375px;
+  }
 
   @media (max-width: $tablet-width-max) {
     padding: 0 21px;

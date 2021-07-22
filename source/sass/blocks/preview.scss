@@ -2,8 +2,13 @@
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -375px;
-  margin-right: -375px;
+  margin-left: -21px;
+  margin-right: -21px;
+
+  @media (min-width: $desktop-width-max) {
+    margin-left: -375px;
+    margin-right: -375px;
+  }
 
   @media (max-width: $tablet-width-max) {
     background-image: url("../img/background-tablet.png");
