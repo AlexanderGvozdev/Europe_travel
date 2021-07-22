@@ -1,0 +1,9 @@
+.back-map {
+  background-image: url("../img/bg-map.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width-max) {
+    background-image: none;
+  }
+}

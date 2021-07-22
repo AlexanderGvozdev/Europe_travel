@@ -1,10 +1,11 @@
 .features {
-  width: 298px;
+  width: 320px;
 
   @media (max-width: $tablet-width-max) {
     border-top: solid #d7d9df 1px;
     text-align: center;
     flex-basis: 100%;
+    width: auto;
   }
 
   @media (max-width: $mobile-width-max) {

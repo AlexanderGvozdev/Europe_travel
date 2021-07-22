@@ -2,17 +2,23 @@
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -375px;
+  margin-right: -375px;
 
   @media (max-width: $tablet-width-max) {
     background-image: url("../img/background-tablet.png");
     background-size: 100% 90%;
     background-repeat: no-repeat;
+    margin-left: -21px;
+    margin-right: -21px;
   }
 
   @media (max-width: $mobile-width-max) {
     background-image: url("../img/background-mobile.png");
     background-size: 100% 55%;
     background-repeat: no-repeat;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
@@ -74,17 +80,12 @@
 
 .preview__button {
   background-color: #fe7865;
-  color: white;
   padding-left: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 179px;
   width: 340px;
   height: 75px;
-  line-height: 15px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
   border: none;
   position: relative;
 
@@ -105,6 +106,15 @@
     padding-bottom: 19px;
     padding-right: 145px;
   }
+}
+
+.preview__button a {
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }
 
 .preview__button::before {

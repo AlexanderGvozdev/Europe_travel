@@ -2,10 +2,6 @@
   border-right: solid #d7d9df 1px;
   text-align: center;
 
-  @media (max-width: $tablet-width-max) {
-    flex-basis: 49%;
-  }
-
   @media (max-width: $mobile-width-max) {
     border-bottom: solid #d7d9df 1px;
     border-right: none;

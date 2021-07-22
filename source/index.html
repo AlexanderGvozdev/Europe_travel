@@ -53,11 +53,133 @@
           </h2>
           <div class="preview__container">
             <p class="preview__desc">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <button class="preview__button">смотреть тур</button>
+            <button class="preview__button"><a href="#travels">смотреть тур</a></button>
           </div>
         </div>
       </section>
+      <section class="photo-section">
+        <a name="travels"></a>
+        <div class="photo-section__desc">
+          <h2>Места посещения</h2>
+          <p>Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        </div>
+        <div class="photo-section__flex">
+          <figure class="photo-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/Greece-tablet.webp 1x, img/Greece-tablet@2.webp 2x">
+              <source type="image/webp"
+                srcset="img/Greece.webp 1x, img/Greece@2.webp 2x">
 
+              <source media="(max-width: 1023px)"
+                srcset="img/Greece-tablet.png 1x, img/Greece-tablet@2.png 2x">
+              <img class="photo-section__image" src="img/Greece.png"
+                srcset="img/Greece@2.png 2x" alt="Фото Греции" width="350" height="430">
+            </picture>
+            <figcaption class="photo-section__position">
+              <p class="photo-section__name-country">Греция</p>
+            </figcaption>
+          </figure>
+          <figure class="photo-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/Albania-tablet.webp 1x, img/Albania-tablet@2.webp 2x">
+              <source type="image/webp"
+                srcset="img/Albania.webp 1x, img/Albania@2.webp 2x">
+
+              <source media="(max-width: 1023px)"
+                srcset="img/Albania-tablet.png 1x, img/Albania-tablet@2.png 2x">
+              <img class="photo-section__image" src="img/Albania.png"
+                srcset="img/Albania@2.png 2x" alt="Фото Албании" width="350" height="430">
+            </picture>
+            <figcaption class="photo-section__position">
+              <p class="photo-section__name-country">Албания</p>
+            </figcaption>
+          </figure>
+          <figure class="photo-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/Macedonia-tablet.webp 1x, img/Macedonia-tablet@2.webp 2x">
+              <source type="image/webp"
+                srcset="img/Macedonia.webp 1x, img/Macedonia@2.webp 2x">
+
+              <source media="(max-width: 1023px)"
+                srcset="img/Macedonia-tablet.png 1x, img/Macedonia-tablet@2.png 2x">
+              <img class="photo-section__image" src="img/Macedonia.png"
+                srcset="img/Macedonia@2.png 2x" alt="Фото Македонии" width="350" height="430">
+            </picture>
+            <figcaption class="photo-section__position">
+              <p class="photo-section__name-country">Македония</p>
+            </figcaption>
+          </figure>
+          <figure class="photo-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/Montenegro-tablet.webp 1x, img/Montenegro-tablet@2.webp 2x">
+              <source type="image/webp"
+                srcset="img/Montenegro.webp 1x, img/Montenegro@2.webp 2x">
+
+              <source media="(max-width: 1023px)"
+                srcset="img/Montenegro-tablet.png 1x, img/Montenegro-tablet@2.png 2x">
+              <img class="photo-section__image" src="img/Montenegro.png"
+                srcset="img/Montenegro@2.png 2x" alt="Фото Черногории" width="350" height="430">
+            </picture>
+            <figcaption class="photo-section__position">
+              <p class="photo-section__name-country">Черногория</p>
+            </figcaption>
+          </figure>
+          <figure class="photo-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/Croatia-tablet.webp 1x, img/Croatia-tablet@2.webp 2x">
+              <source type="image/webp"
+                srcset="img/Croatia.webp 1x, img/Croatia@2.webp 2x">
+
+              <source media="(max-width: 1023px)"
+                srcset="img/Croatia-tablet.png 1x, img/Croatia-tablet@2.png 2x">
+              <img class="photo-section__image" src="img/Croatia.png"
+                srcset="img/Croatia@2.png 2x" alt="Фото Хорватии" width="350" height="430">
+            </picture>
+            <figcaption class="photo-section__position">
+              <p class="photo-section__name-country">Хорватия</p>
+             </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="back-map">
+        <section class="countries-desc">
+          <ul class="countries-desc__list list-reset">
+            <li class="countries-desc__list-item countries-desc__list-item--active"><a>Греция</a></li>
+            <li class="countries-desc__list-item"><a>Албания</a></li>
+            <li class="countries-desc__list-item"><a>Македония</a></li>
+            <li class="countries-desc__list-item"><a>Черногория</a></li>
+            <li class="countries-desc__list-item"><a>Хорватия</a></li>
+          </ul>
+          <div class="countres-desc__item">
+            <div class="countres-desc__item-wrapper">
+              <h2>Греция</h2>
+              <p>На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+              <button>купить тур сейчас</button>
+            </div>
+            <picture>
+              <source media="(max-width: 767px)"
+              srcset="img/bg-greece-mobile.png">
+              <source media="(max-width: 1023px)"
+              srcset="img/bg-greece-tablet.png">
+              <img class="countres-desc__item-wrapper-img" src="img/Greece.png" width="320" height="415" alt="фото достопримечательности">
+            </picture>
+            <div class="countres-desc__reviews">
+              <h3>Отзывы</h3>
+              <p class="countres-desc__reviews-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+              <div class="countres-desc__reviews-author">
+                <img src="img/avatar-photo.png" width="38" height="38" alt="аватар пользователя">
+                <p class="countres-desc__reviews-author-name">Влада Голицина</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section></section>
+      </div>
     </div>
   </main>
   <footer class="page-footer">

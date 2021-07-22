@@ -1,0 +1,142 @@
+.photo-section {
+  margin-top: 200px;
+  margin-bottom: 153px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 40px;
+    margin-bottom: 75px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 88px;
+  }
+}
+
+.photo-section__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 53px;
+  justify-content: center;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 40px;
+    gap: 40px;
+    width: 616px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 30px;
+    width: 288px;
+  }
+}
+
+.photo-section__wrapper {
+  position: relative;
+  width: 350px;
+  margin: 0;
+
+  @media (max-width: $tablet-width-max) {
+    width: 288px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.photo-section__desc {
+  width: 340px;
+
+  @media (max-width: $tablet-width-max) {
+    text-align: center;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 303px;
+  }
+}
+
+.photo-section__desc h2 {
+  position: relative;
+  line-height: 80px;
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 65px;
+
+  @media (max-width: $tablet-width-max) {
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.photo-section__desc h2::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 190px;
+  width: 229px;
+  height: 2px;
+  background-color: #fe7865;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.photo-section__desc p {
+  color: #2c2e3fb2;
+  opacity: 0.7;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.photo-section__image {
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.photo-section__name-country {
+  padding-top: 16px;
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2c2e3f;
+  background-color: white;
+  width: 215px;
+  height: 61px;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateY(-92px);
+}
+
+.photo-section__position {
+  position: absolute;
+  left: 20%;
+
+  @media (max-width: $tablet-width-max) {
+    left: 14%;
+  }
+}
