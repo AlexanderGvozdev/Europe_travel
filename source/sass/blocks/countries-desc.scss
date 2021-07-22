@@ -16,7 +16,7 @@
   opacity: 1;
 }
 
-.countres-desc__item h2 {
+.countries-desc__item h2 {
   position: relative;
   line-height: 90px;
   font-size: 55px;
@@ -35,7 +35,7 @@
   }
 }
 
-.countres-desc__item {
+.countries-desc__item {
   display: flex;
   flex-direction: row;
 
@@ -44,13 +44,13 @@
   }
 }
 
-.countres-desc__item-wrapper {
+.countries-desc__item-wrapper {
   @media (max-width: $tablet-width-max) {
     text-align: center;
   }
 }
 
-.countres-desc__item-wrapper p {
+.countries-desc__item-wrapper p {
   width: 387px;
   line-height: 28px;
   font-size: 16px;
@@ -69,7 +69,7 @@
   }
 }
 
-.countres-desc__item h2::after {
+.countries-desc__item h2::after {
   content: "";
   position: absolute;
   left: 1px;
@@ -83,7 +83,7 @@
   }
 }
 
-.countres-desc__item button {
+.countries-desc__item button {
   background-color: #fe7865;
   color: white;
   width: 250px;
@@ -116,7 +116,7 @@
   }
 }
 
-.countres-desc__reviews {
+.countries-desc__reviews {
   position: absolute;
   top: 34%;
   right: -20%;
@@ -142,7 +142,7 @@
   }
 }
 
-.countres-desc__reviews-text {
+.countries-desc__reviews-text {
   line-height: 28px;
   font-size: 14px;
   font-weight: 400;
@@ -150,14 +150,14 @@
   opacity: 0.7;
 }
 
-.countres-desc__reviews h3 {
+.countries-desc__reviews h3 {
   position: relative;
   line-height: 37px;
   font-size: 30px;
   font-weight: 500;
 }
 
-.countres-desc__reviews h3::after {
+.countries-desc__reviews h3::after {
   content: "";
   position: absolute;
   left: 1px;
@@ -167,18 +167,18 @@
   background-color: #fe7865;
 }
 
-.countres-desc__reviews-author {
+.countries-desc__reviews-author {
   display: flex;
   flex-direction: row;
 }
 
-.countres-desc__reviews-author-name {
+.countries-desc__reviews-author-name {
   line-height: 19px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.countres-desc__item-wrapper-img {
+.countries-desc__item-wrapper-img {
   @media (max-width: $tablet-width-max) {
     width: fill-available;
     height: 415px;
@@ -193,7 +193,7 @@
   }
 }
 
-.countres-desc__position {
+.countries-desc__position {
   position: relative;
   margin-left: 82px;
 
