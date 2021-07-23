@@ -16,11 +16,10 @@
 .tariffs__econom {
   border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 370px;
+  padding: 0;
 
   @media (max-width: $tablet-width-max) {
     order: 2;
@@ -52,10 +51,8 @@
   margin-bottom: 30px;
 
   @media (max-width: $tablet-width-max) {
-    width: 350px;
+    width: 100%;
     margin-bottom: 0;
-    margin-left: -30px;
-    margin-right: -30px;
     font-weight: 500;
     line-height: 12px;
     font-size: 10px;
@@ -89,6 +86,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
