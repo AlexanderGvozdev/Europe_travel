@@ -117,6 +117,11 @@
   }
 }
 
+.countries-desc__item button:hover {
+  cursor: pointer;
+  background-color: #f17d4b;
+}
+
 .countries-desc__reviews {
   position: absolute;
   top: 34%;
@@ -156,6 +161,11 @@
   line-height: 37px;
   font-size: 30px;
   font-weight: 500;
+
+  @media (max-width: $mobile-width-max) {
+    line-height: 25px;
+    font-size: 20px;
+  }
 }
 
 .countries-desc__reviews h3::after {

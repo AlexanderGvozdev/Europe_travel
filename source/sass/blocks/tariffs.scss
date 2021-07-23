@@ -18,13 +18,19 @@
   border-radius: 6px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
 
   @media (max-width: $tablet-width-max) {
     order: 2;
     width: 288px;
-    margin-left: auto;
-    margin-right: auto;
   }
+}
+
+.tariffs__complex:hover,
+.tariffs__econom:hover {
+  border: 1px solid #fe7865;
 }
 
 .tariffs__complex a,
@@ -56,6 +62,12 @@
   }
 }
 
+.tariffs__complex a:hover,
+.tariffs__econom a:hover {
+  cursor: pointer;
+  background-color: #f17d4b;
+}
+
 .tariffs__complex h3,
 .tariffs__econom h3 {
   font-weight: 600;
@@ -65,6 +77,11 @@
   @media (max-width: $tablet-width-max) {
     font-size: 24px;
   }
+}
+
+.tariffs__complex:hover h3,
+.tariffs__econom:hover h3 {
+  color: #fe7865;
 }
 
 .tariffs__econom-price,
@@ -83,6 +100,11 @@
   font-weight: 700;
   line-height: 34px;
   font-size: 25px;
+}
+
+.tariffs__complex:hover .tariffs__complex-price-number,
+.tariffs__econom:hover .tariffs__econom-price-number {
+  color: #fe7865;
 }
 
 .tariffs__complex-price-desc,

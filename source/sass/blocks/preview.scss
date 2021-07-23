@@ -84,42 +84,34 @@
 }
 
 .preview__button {
+  display: block;
+  position: relative;
+  color: white;
   background-color: #fe7865;
-  padding-left: 40px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 179px;
-  width: 340px;
-  height: 75px;
-  border: none;
-  position: relative;
+  padding-left: 40px;
+  font-weight: 700;
+  line-height: 15px;
+  font-size: 12px;
 
   @media (max-width: $tablet-width-max) {
     width: 250px;
-    height: 50px;
-    padding-left: 40px;
     padding-top: 19px;
     padding-bottom: 19px;
-    padding-right: 107px;
+    padding-left: 0;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: 500;
   }
 
   @media (max-width: $mobile-width-max) {
     width: 288px;
-    height: 50px;
-    padding-left: 40px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-right: 145px;
   }
-}
-
-.preview__button a {
-  line-height: 15px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
 }
 
 .preview__button::before {
@@ -128,12 +120,13 @@
   height: 14px;
   background: url("../img/arrow-bottom.svg");
   position: absolute;
-  top: 20px;
-  right: 43px;
+  top: 32px;
+  right: 49px;
 }
 
 .preview__button:hover {
   cursor: pointer;
+  background-color: #f17d4b;
 }
 
 .preview__container {
