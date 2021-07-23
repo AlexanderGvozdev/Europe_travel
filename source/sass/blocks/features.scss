@@ -4,7 +4,7 @@
   @media (max-width: $tablet-width-max) {
     border-top: solid #d7d9df 1px;
     text-align: center;
-    flex-basis: 100%;
+    grid-column: 1/ -1;
     width: auto;
   }
 

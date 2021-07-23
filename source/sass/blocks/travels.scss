@@ -9,25 +9,26 @@
 }
 
 .travels__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: $mobile-width-max) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.travels__list_grid {
+  @media (max-width: $mobile-width-max) {
+    grid-column: 1/ -1;
+  }
+}
+
+.travels__list {
+  padding-left: 0;
 }
 
 .travels__list a {
   text-decoration: none;
   color: black;
   opacity: 50%;
-}
-
-.travels__list {
-  @media (max-width: $mobile-width-max) {
-    flex-basis: 30%;
-  }
-}
-
-.travels__list:last-child {
-  @media (max-width: $mobile-width-max) {
-    flex-grow: 1;
-  }
 }

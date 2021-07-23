@@ -1,10 +1,10 @@
 .tariffs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 
-  @media (max-width: $tablet-width-max) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (min-width: $desktop-width-max) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (max-width: $mobile-width-max) {
@@ -117,12 +117,16 @@
 }
 
 .tariffs__prices {
-  width: 310px;
-  margin-left: 58px;
+  grid-column: 1/ -1;
+
+  @media (min-width: $desktop-width-max) {
+    width: 310px;
+    margin-left: 58px;
+    grid-column: auto;
+  }
 
   @media (max-width: $tablet-width-max) {
     order: 1;
-    grid-column: 1/ -1;
     margin-left: 0;
     width: 100%;
     text-align: center;
