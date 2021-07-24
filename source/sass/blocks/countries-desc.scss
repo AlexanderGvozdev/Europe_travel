@@ -212,3 +212,8 @@
     margin-left: 0;
   }
 }
+
+// отключает лишние блоки со странами
+.countries-desc__item-none {
+  display: none;
+}

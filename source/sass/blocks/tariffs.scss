@@ -131,10 +131,15 @@
   position: absolute;
   left: -30px;
   top: 5px;
-  width: 12px;
+  width: 11px;
   height: 14px;
   background: url("../img/check.svg");
   background-repeat: no-repeat;
+}
+
+.tariffs__econom:hover li::before,
+.tariffs__complex:hover li::before {
+  background: url("../img/check-black.svg");
 }
 
 .tariffs__prices {
