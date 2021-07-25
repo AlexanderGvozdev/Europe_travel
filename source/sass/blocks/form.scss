@@ -9,7 +9,8 @@
 
 .form img {
   @media (max-width: $tablet-width-max) {
-    width: fill-available;
+    width: 100%;
+    min-width: 768px;
     margin-left: -21px;
     margin-right: -21px;
   }

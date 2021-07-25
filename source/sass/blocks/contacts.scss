@@ -13,3 +13,17 @@
 .contacts a {
   color: #fe7865;
 }
+
+.contacts__mail {
+  position: relative;
+}
+
+.contacts__mail::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 26px;
+  height: 20px;
+  background: url("../img/mail-icon.svg");
+}

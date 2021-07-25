@@ -3,7 +3,7 @@
   height: 101px;
   display: grid;
   grid-template-columns: 147px auto;
-  gap: 41%;
+  gap: 46%;
 
   @media (max-width: $tablet-width-max) {
     height: 51px;
@@ -19,6 +19,11 @@
 
   @media (max-width: $tablet-width-max) {
     padding-left: 3px;
+    padding-top: 16px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 15px;
     padding-top: 16px;
   }
 }
