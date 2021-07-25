@@ -1,5 +1,10 @@
 .form {
   position: relative;
+  margin-left: 10%;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+  }
 }
 
 .form img {
@@ -85,6 +90,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 25px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
     width: 250px;

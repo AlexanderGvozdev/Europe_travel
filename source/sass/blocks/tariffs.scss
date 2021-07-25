@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
+  margin-top: 292px;
+  margin-left: 8%;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+    margin-top: 73px;
+  }
 
   @media (min-width: $desktop-width-max) {
     grid-template-columns: repeat(3, 1fr);
@@ -168,6 +175,12 @@
   @media (max-width: $tablet-width-max) {
     line-height: 45px;
     font-size: 30px;
+    font-weight: 600;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    line-height: 36px;
+    font-size: 24px;
     font-weight: 600;
   }
 }

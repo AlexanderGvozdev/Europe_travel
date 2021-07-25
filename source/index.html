@@ -18,28 +18,28 @@
           <a class="logo page-header__logo">
             <img src="img/logo.svg" width="57" height="22" alt="логотип сайта">
           </a>
-            <nav class="nav nav--closed nav--nojs">
-              <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-              <div class="nav__wrapper">
-                <ul class="nav__list list-reset">
-                  <li class="nav__item">
-                    <a href="">
-                      О путешествии
-                    </a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#">
-                      Цены
-                    </a>
-                 </li>
-                 <li class="nav__item nav__phone">
+          <nav class="nav nav--closed nav--nojs">
+            <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="nav__wrapper">
+              <ul class="nav__list list-reset">
+                <li class="nav__item nav__item--active">
+                  <a href="#places">
+                    О путешествии
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#prices">
+                    Цены
+                  </a>
+                </li>
+                <li class="nav__item nav__phone">
                   <a href="tel:+749978468446">
                     +7 (499) -784-684-46
                   </a>
                </li>
-                </ul>
-              </div>
-          </nav>
+              </ul>
+            </div>
+        </nav>
         </div>
       </div>
   </header>
@@ -58,6 +58,7 @@
         </div>
       </section>
       <section class="photo-section">
+        <a name="places"></a>
         <div class="photo-section__desc">
           <h2>Места посещения</h2>
           <p>Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
@@ -194,7 +195,7 @@
               </div>
             </div>
           </div>
-          <div class="countries-desc__item countries-desc__item-none">
+          <div class="countries-desc__item element-none">
             <div class="countries-desc__item-wrapper">
               <h2>Албания</h2>
               <p>В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
@@ -218,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="countries-desc__item countries-desc__item-none">
+          <div class="countries-desc__item element-none">
             <div class="countries-desc__item-wrapper">
               <h2>Македония</h2>
               <p>В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -242,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="countries-desc__item countries-desc__item-none">
+          <div class="countries-desc__item element-none">
             <div class="countries-desc__item-wrapper">
               <h2>Черногория</h2>
               <p>Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
@@ -266,7 +267,7 @@
               </div>
             </div>
           </div>
-          <div class="countries-desc__item countries-desc__item-none">
+          <div class="countries-desc__item element-none">
             <div class="countries-desc__item-wrapper">
               <h2>Хорватия</h2>
               <p>В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
@@ -322,6 +323,7 @@
             <a>купить тур сейчас</a>
           </div>
           <div class="tariffs__prices">
+            <a name="prices"></a>
             <h3>Цены</h3>
             <p class="tariffs__prices-desc">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
             </p>
@@ -424,6 +426,19 @@
       </div>
     </div>
   </footer>
+  <fieldset class="popup">
+    <img src="img/popup.png" width="338" height="444" alt="фотография">
+    <div class="popup__wrapper">
+      <h3>Купить тур</h3>
+      <input required type="tel" placeholder="+7 Введите 10 цифр номера">
+      <input type="email" placeholder="E-mail">
+      <button class="popup__wrapper-button">отправить</button>
+      <button class="popup__wrapper-button-close"></button>
+    </div>
+  </fieldset>
+  <div class="popup-send element-none">
+    <p>Форма успешно отправлена, спасибо! :)</p>
+  </div>
   <script src="js/main.min.js"></script>
 </body>
 
