@@ -1,15 +1,23 @@
 .popup {
   background-color: #fbf8f8;
   width: 728px;
-  // тут грид
   display: none;
   grid-template-columns: repeat(2, 1fr);
   border: 0;
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
 
   @media (max-width: $mobile-width-max) {
     width: 320px;
     background-color: white;
   }
+}
+
+.popup-show {
+  display: grid;
 }
 
 .popup img {

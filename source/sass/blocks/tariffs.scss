@@ -22,8 +22,15 @@
 .tariffs__wrapper {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   column-gap: 30px;
+  grid-column: 1/ -1;
+
+  @media (min-width: $desktop-width-max) {
+    margin-left: 20px;
+    grid-column: auto;
+  }
 
   @media (max-width: $tablet-width-max) {
     order: 2;

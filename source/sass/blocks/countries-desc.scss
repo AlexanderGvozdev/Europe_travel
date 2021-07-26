@@ -105,7 +105,7 @@
   }
 }
 
-.countries-desc__item button {
+.countries-desc__item-wrapper-button {
   background-color: #fe7865;
   color: white;
   width: 250px;
@@ -143,12 +143,12 @@
   }
 }
 
-.countries-desc__item button:hover {
+.countries-desc__item-wrapper-button:hover {
   cursor: pointer;
   background-color: #f17d4b;
 }
 
-.countries-desc__item button:active {
+.countries-desc__item-wrapper-button:active {
   @media (max-width: $tablet-width-max) {
     background-color: #f17d4b;
   }

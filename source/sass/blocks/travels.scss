@@ -15,8 +15,12 @@
 .travels__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 102px;
+  margin-left: 40px;
   margin-top: -14px;
+
+  @media (min-width: $desktop-width-max) {
+    margin-left: 102px;
+  }
 
   @media (max-width: $tablet-width-max) {
     margin-left: 0;

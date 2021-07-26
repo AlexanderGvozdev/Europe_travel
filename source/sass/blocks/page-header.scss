@@ -3,7 +3,11 @@
   height: 101px;
   display: grid;
   grid-template-columns: 147px auto;
-  gap: 46%;
+  gap: 36%;
+
+  @media (min-width: $desktop-width-max) {
+    gap: 46%;
+  }
 
   @media (max-width: $tablet-width-max) {
     height: 51px;
