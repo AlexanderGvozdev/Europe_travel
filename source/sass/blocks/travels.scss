@@ -1,19 +1,30 @@
 .travels {
-  border-right: solid #d7d9df 1px;
   text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    text-align: left;
+  }
 
   @media (max-width: $mobile-width-max) {
     border-bottom: solid #d7d9df 1px;
     border-right: none;
+    text-align: center;
   }
 }
 
 .travels__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 102px;
+  margin-top: -14px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+  }
 
   @media (max-width: $mobile-width-max) {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: -12px;
   }
 }
 
@@ -31,4 +42,15 @@
   text-decoration: none;
   color: black;
   opacity: 50%;
+}
+
+.travels h3 {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-left: 39px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+  }
 }

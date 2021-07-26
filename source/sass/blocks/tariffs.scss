@@ -2,12 +2,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  margin-top: 292px;
+  margin-top: 229px;
   margin-left: 8%;
 
   @media (max-width: $tablet-width-max) {
     margin-left: 0;
-    margin-top: 73px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width-max) {
@@ -19,8 +19,32 @@
   }
 }
 
+.tariffs__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  column-gap: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    column-gap: 46px;
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    row-gap: 27px;
+  }
+}
+
 .tariffs__complex,
 .tariffs__econom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
   margin-left: auto;
@@ -29,8 +53,8 @@
   padding: 0;
 
   @media (max-width: $tablet-width-max) {
-    order: 2;
     width: 288px;
+    text-align: center;
   }
 }
 
@@ -56,6 +80,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
+  margin-top: 10px;
 
   @media (max-width: $tablet-width-max) {
     width: 100%;
@@ -63,6 +88,12 @@
     font-weight: 500;
     line-height: 12px;
     font-size: 10px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 18px;
   }
 }
 
@@ -95,9 +126,13 @@
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 12px;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 6px;
   }
 }
 
@@ -106,6 +141,10 @@
   font-weight: 700;
   line-height: 34px;
   font-size: 25px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: -14px;
+  }
 }
 
 .tariffs__complex:hover .tariffs__complex-price-number,
@@ -118,6 +157,14 @@
   font-weight: 400;
   line-height: 24px;
   font-size: 16px;
+  width: 265px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    margin-top: -12px;
+  }
 }
 
 .tariffs__econom-price-list,
@@ -125,11 +172,26 @@
   font-weight: 400;
   line-height: 32px;
   font-size: 16px;
+  margin-top: 37px;
+  margin-left: 22px;
+  width: 236px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 220px;
+    text-align: left;
+  }
 }
 
 .tariffs__econom-price-list li,
 .tariffs__complex-price-list li {
   position: relative;
+  margin-bottom: 13px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .tariffs__econom-price-list li::before,
@@ -151,9 +213,10 @@
 
 .tariffs__prices {
   grid-column: 1/ -1;
+  margin-top: 55px;
 
   @media (min-width: $desktop-width-max) {
-    width: 310px;
+    width: 309px;
     margin-left: 58px;
     grid-column: auto;
   }
@@ -189,8 +252,8 @@
   content: "";
   position: absolute;
   left: 1px;
-  top: 99px;
-  width: 229px;
+  top: 104px;
+  width: 176px;
   height: 2px;
   background-color: #fe7865;
 
@@ -205,6 +268,29 @@
   font-weight: 400;
   color: #2c2e3f;
   opacity: 0.7;
+  margin-top: -7px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 268px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
+  }
+}
+
+.tariffs__prices-contacts {
+  margin-left: 51px;
+  margin-top: 56px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 17px;
+  }
 }
 
 .tariffs__prices-contacts-desc {
