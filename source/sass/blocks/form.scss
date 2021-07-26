@@ -131,3 +131,13 @@
     margin-top: 0;
   }
 }
+
+.form__fieldset-button:hover {
+  background-color: #f17d4b;
+}
+
+.form__fieldset-button:active {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f17d4b;
+  }
+}

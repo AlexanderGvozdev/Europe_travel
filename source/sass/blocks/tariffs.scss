@@ -103,6 +103,13 @@
   background-color: #f17d4b;
 }
 
+.tariffs__complex a:active,
+.tariffs__econom a:active {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f17d4b;
+  }
+}
+
 .tariffs__complex h3,
 .tariffs__econom h3 {
   font-weight: 600;

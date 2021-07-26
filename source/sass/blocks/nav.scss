@@ -7,17 +7,15 @@
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     width: 320px;
-    height: 658px;
     background-color: white;
     margin-top: 0;
+    padding-top: 84px;
+    padding-bottom: 90px;
     position: absolute;
     right: -3%;
   }
 
   @media (max-width: $mobile-width-max) {
-    text-align: center;
-    padding: 0;
-    margin-top: 3px;
     width: 100%;
     right: 0;
   }
@@ -41,7 +39,6 @@
   @media (max-width: $mobile-width-max) {
     position: relative;
     display: block;
-    padding: 15px 0;
   }
 }
 
@@ -54,6 +51,14 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.nav__item:hover a {
+  color: #fe7865;
+
+  @media (max-width: $tablet-width-max) {
+    color: inherit;
   }
 }
 
@@ -95,12 +100,15 @@
   }
 }
 
-@media (max-width: $tablet-width-max) {
-  .nav--closed .nav__item {
+
+.nav--closed .nav__item {
+  @media (max-width: $tablet-width-max) {
     display: none;
   }
+}
 
-  .nav--opened .nav__toggle {
+.nav--opened .nav__toggle {
+  @media (max-width: $tablet-width-max) {
     top: 0;
     right: 0;
     background-color: white;
@@ -112,11 +120,15 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: 8px;
+      right: -14px;
       width: 36px;
       height: 3px;
       background-color: #141517;
       opacity: 0.2;
+
+      @media (max-width: $tablet-width-max) {
+        right: 0;
+      }
     }
 
     &::before {
@@ -140,7 +152,24 @@
 
 .nav--opened .nav__item {
   @media (max-width: $tablet-width-max) {
+    position: relative;
     background-color: #fbf8f8;
+    padding-left: 14px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 28px;
+  }
+}
+
+.nav--opened .nav__item::after {
+  @media (max-width: $tablet-width-max) {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 25px;
+    width: 8px;
+    height: 12px;
+    background: url("../img/arrow-right.svg");
   }
 }
 

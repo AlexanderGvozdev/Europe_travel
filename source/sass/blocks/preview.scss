@@ -158,3 +158,9 @@
     transform: translateY(120px);
   }
 }
+
+.preview__button:active {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f17d4b;
+  }
+}

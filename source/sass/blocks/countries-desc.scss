@@ -148,6 +148,12 @@
   background-color: #f17d4b;
 }
 
+.countries-desc__item button:active {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f17d4b;
+  }
+}
+
 .countries-desc__reviews {
   position: absolute;
   top: 34%;

@@ -50,6 +50,16 @@
   }
 }
 
+.popup__wrapper-button:hover {
+  background-color: #f17d4b;
+}
+
+.popup__wrapper-button:active {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f17d4b;
+  }
+}
+
 .popup__wrapper-button-close {
   position: absolute;
   display: block;
