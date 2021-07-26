@@ -191,6 +191,17 @@
 .countries-desc__reviews-author {
   display: flex;
   flex-direction: row;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
+}
+
+.countries-desc__reviews-author img {
+  @media (max-width: $mobile-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .countries-desc__reviews-author-name {
