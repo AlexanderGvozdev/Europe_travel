@@ -4,6 +4,7 @@
   display: none;
   grid-template-columns: repeat(2, 1fr);
   border: 0;
+  padding: 0;
   position: fixed;
   top: 130px;
   left: 50%;
@@ -13,6 +14,7 @@
   @media (max-width: $mobile-width-max) {
     width: 320px;
     background-color: white;
+    margin-left: 0;
   }
 }
 
@@ -31,6 +33,12 @@
   flex-direction: column;
   text-align: center;
   position: relative;
+  margin-left: -30px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 0;
+    width: 320px;
+  }
 }
 
 .popup__wrapper-button {
@@ -46,15 +54,16 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: -7px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
 
   @media (max-width: $mobile-width-max) {
-    width: 100%;
-    padding-left: 103px;
-    padding-right: 103px;
+    width: 288px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 185px;
   }
 }
 
@@ -86,7 +95,7 @@
     top: 12px;
     right: 0;
     width: 28px;
-    height: 3px;
+    height: 1px;
     background-color: #141517;
     opacity: 0.2;
   }
@@ -99,11 +108,16 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  @media (max-width: $mobile-width-max) {
+    top: 17px;
+    right: 16px;
+  }
 }
 
 .popup__wrapper input {
   border: 1px solid rgba(44, 46, 63, 0.3);
-  width: 270px;
+  width: 250px;
   height: 50px;
   padding-left: 15px;
   margin-left: auto;
@@ -111,8 +125,7 @@
   margin-bottom: 20px;
 
   @media (max-width: $mobile-width-max) {
-    width: 288px;
-    padding-left: 0;
+    width: 270px;
   }
 }
 
@@ -120,4 +133,12 @@
   line-height: 42px;
   font-size: 25px;
   font-weight: 600;
+  margin-top: 73px;
+  margin-bottom: 49px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
 }
