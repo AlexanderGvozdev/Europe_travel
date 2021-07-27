@@ -19,7 +19,7 @@
   opacity: 0.3;
   margin-right: 77px;
 
-  @media (max-width: $mobile-width-max) { //временно
+  @media (max-width: $mobile-width-max) { //временный отступ до готовности свайпа
     margin-right: 10px;
   }
 }
