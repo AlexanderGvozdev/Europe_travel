@@ -3,9 +3,36 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @media (max-width: $mobile-width-max) {
     margin-top: 30px;
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 28px;
+  width: 1px;
+  height: 176px;
+  background-color: #d7d9df;
+
+  @media (min-width: $desktop-width-max) {
+    left: -70px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    left: -21px;
+    top: 7px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    height: 1px;
+    left: -35px;
+    top: -11px;
   }
 }
 

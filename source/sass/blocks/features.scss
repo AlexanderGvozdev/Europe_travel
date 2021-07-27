@@ -1,8 +1,8 @@
 .features {
   width: 320px;
+  position: relative;
 
   @media (max-width: $tablet-width-max) {
-    border-top: solid #d7d9df 1px;
     text-align: center;
     grid-column: 1/ -1;
     width: auto;
@@ -12,6 +12,33 @@
   @media (max-width: $mobile-width-max) {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 28px;
+  width: 1px;
+  height: 176px;
+  background-color: #d7d9df;
+
+  @media (min-width: $desktop-width-max) {
+    left: -42px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 726px;
+    height: 1px;
+    left: -10px;
+    top: -11px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    left: -6px;
+    top: -8px;
   }
 }
 
