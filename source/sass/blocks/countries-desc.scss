@@ -7,7 +7,7 @@
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 
   @media (max-width: $mobile-width-max) {
-    margin-left: 10px;
+    margin-left: -24px;
   }
 }
 
@@ -279,7 +279,7 @@
 }
 
 
-// отключает лишние
+// временно отключает лишнее
 .element-none {
   display: none;
 }
