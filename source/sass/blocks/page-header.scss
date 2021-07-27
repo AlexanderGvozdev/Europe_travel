@@ -24,10 +24,19 @@
   @media (max-width: $tablet-width-max) {
     padding-left: 3px;
     padding-top: 16px;
+    width: 44px;
+    height: 17px;
   }
 
   @media (max-width: $mobile-width-max) {
     padding-left: 15px;
     padding-top: 16px;
+  }
+}
+
+.page-header__logo img {
+  @media (max-width: $tablet-width-max) {
+    width: 44px;
+    height: 17px;
   }
 }

@@ -19,6 +19,9 @@
 .features p {
   color: black;
   opacity: 50%;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
 
   @media (max-width: $tablet-width-max) {
     width: 695px;
