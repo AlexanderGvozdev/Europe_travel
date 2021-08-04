@@ -2,7 +2,7 @@
   position: relative;
   height: 101px;
   display: grid;
-  grid-template-columns: 147px auto;
+  grid-template-columns: auto auto;
   gap: 36%;
 
   @media (min-width: $desktop-width-max) {

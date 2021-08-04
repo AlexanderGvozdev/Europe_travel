@@ -14,8 +14,10 @@
 }
 
 .form img {
+  height: 455px;
+
   @media (max-width: $tablet-width-max) {
-    width: 105%;
+    width: 100%;
     min-width: 768px;
     margin-left: -21px;
     margin-right: -21px;
