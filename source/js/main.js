@@ -2,9 +2,11 @@ const navMain = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
 const buttonOpen = document.querySelector('.countries-desc__item-wrapper-button');
 const buttonClose = document.querySelector('.popup__wrapper-button-close');
+const pageHeader = document.querySelector('.page-header');
 const popup = document.querySelector('.popup');
 const inputTel = document.querySelector('.popup__wrapper-tel');
 
+pageHeader.classList.remove('page-header--no-js');
 navMain.classList.remove('nav--nojs');
 
 navToggle.addEventListener('click', function() {

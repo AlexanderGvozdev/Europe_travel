@@ -16,6 +16,12 @@
   }
 }
 
+.page-header--no-js {
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 355px;
+  }
+}
+
 .page-header__logo {
   display: block;
   padding-left: 136px;

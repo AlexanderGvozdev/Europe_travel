@@ -165,7 +165,7 @@
 
   @media (min-width: $desktop-width-max) {
     top: 19%;
-    right: -62%;
+    right: -55%;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -237,6 +237,9 @@
 }
 
 .countries-desc__reviews-author img {
+  width: 38px;
+  height: 38px;
+
   @media (max-width: $mobile-width-max) {
     margin-left: auto;
     margin-right: auto;
