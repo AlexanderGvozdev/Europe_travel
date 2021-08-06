@@ -3,8 +3,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 40px;
-  margin-left: -295px;
+  margin-top: 41px;
+  margin-left: -253px;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
@@ -26,11 +26,9 @@
 .nav__list a {
   border: none;
   text-transform: none;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 500;
   text-decoration: none;
   color: black;
+  display: block;
 
   @media (max-width: $tablet-width-max) {
     font-size: 20px;
@@ -46,6 +44,9 @@
 
 .nav__item {
   margin-right: 44px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
 
   @media (max-width: $tablet-width-max) {
     margin-right: 0;
@@ -182,6 +183,7 @@
   font-weight: 400;
   text-decoration: underline;
   margin-left: 10%;
+  margin-top: -5px;
 
   @media (max-width: $tablet-width-max) {
     display: none;

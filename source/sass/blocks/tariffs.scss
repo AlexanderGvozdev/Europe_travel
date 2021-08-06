@@ -212,13 +212,28 @@
   font-size: 16px;
   margin-top: 37px;
   margin-left: 22px;
-  width: 236px;
 
   @media (max-width: $tablet-width-max) {
     margin-left: 10px;
     margin-top: 7px;
     width: 220px;
     text-align: left;
+  }
+}
+
+.tariffs__complex-price-list {
+  width: 269px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 263px;
+  }
+}
+
+.tariffs__econom-price-list {
+  width: 276px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 262px;
   }
 }
 
